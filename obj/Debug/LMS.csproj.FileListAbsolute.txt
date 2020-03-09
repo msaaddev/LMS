@@ -1,0 +1,15 @@
+C:\Users\Saad\source\repos\LMS\LMS\bin\Debug\LMS.exe.config
+C:\Users\Saad\source\repos\LMS\LMS\bin\Debug\LMS.exe
+C:\Users\Saad\source\repos\LMS\LMS\bin\Debug\LMS.pdb
+C:\Users\Saad\source\repos\LMS\LMS\obj\Debug\LMS.csprojAssemblyReference.cache
+C:\Users\Saad\source\repos\LMS\LMS\obj\Debug\LMS.Form1.resources
+C:\Users\Saad\source\repos\LMS\LMS\obj\Debug\LMS.Form2.resources
+C:\Users\Saad\source\repos\LMS\LMS\obj\Debug\LMS.Properties.Resources.resources
+C:\Users\Saad\source\repos\LMS\LMS\obj\Debug\LMS.csproj.GenerateResource.cache
+C:\Users\Saad\source\repos\LMS\LMS\obj\Debug\LMS.exe
+C:\Users\Saad\source\repos\LMS\LMS\obj\Debug\LMS.pdb
+C:\Users\Saad\source\repos\LMS\LMS\obj\Debug\LMS.signup_txt_admin_designation.resources
+C:\Users\Saad\source\repos\LMS\LMS\obj\Debug\LMS.admin_panel.resources
+C:\Users\Saad\source\repos\LMS\LMS\obj\Debug\LMS.add_course.resources
+C:\Users\Saad\source\repos\LMS\LMS\obj\Debug\LMS.update_course.resources
+C:\Users\Saad\source\repos\LMS\LMS\obj\Debug\LMS.delete_course.resources
