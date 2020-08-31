@@ -102,6 +102,7 @@
             this.txt_student_reg_num.Name = "txt_student_reg_num";
             this.txt_student_reg_num.Size = new System.Drawing.Size(341, 20);
             this.txt_student_reg_num.TabIndex = 25;
+            this.txt_student_reg_num.TextChanged += new System.EventHandler(this.txt_student_reg_num_TextChanged);
             // 
             // student_password
             // 
@@ -233,6 +234,7 @@
             this.Controls.Add(this.titleLMS);
             this.Name = "add_student";
             this.Text = "v";
+            this.Load += new System.EventHandler(this.add_student_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -12,24 +12,18 @@ using System.Data.SqlClient;
 
 namespace LMS
 {
-    public partial class signup_txt_admin_designation : Form
+    public partial class sign_up : Form
     {
         SqlConnection con = new SqlConnection("Data Source=ROZINA-PC;Initial Catalog=LMS;Integrated Security=True;MultipleActiveResultSets=true");
 
-        public signup_txt_admin_designation()
+        public sign_up()
         {
             InitializeComponent();
         }
 
-        private void admin_username_Click(object sender, EventArgs e)
+        private void sign_up_Load(object sender, EventArgs e)
         {
-            
-        }
 
-        private void btn_admin_back_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new main_window().Show();
         }
 
         private void btn_admin_signup_confirm_Click(object sender, EventArgs e)
@@ -88,13 +82,20 @@ namespace LMS
                     cmd5.Parameters.AddWithValue("@admin_password", password);
                     cmd5.ExecuteNonQuery();
 
+                    con.Close();
+                    MessageBox.Show("Admin successfully added.");
+
                     this.Hide();
                     new main_window().Show();
                 }
-                
-            }
 
-                
+            }
+        }
+
+        private void btn_admin_back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new admin_login().Show();
         }
     }
 }

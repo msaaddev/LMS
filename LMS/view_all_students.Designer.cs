@@ -28,31 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_all_students_back = new System.Windows.Forms.Button();
-            this.label_all_course = new System.Windows.Forms.Label();
-            this.titleLMS = new System.Windows.Forms.Label();
+            this.view_all_students_table = new System.Windows.Forms.DataGridView();
             this.header_reg_num = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.header_student_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.header_student_semester = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.header_student_department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.header_is_hostelite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btn_all_students_back = new System.Windows.Forms.Button();
+            this.label_all_course = new System.Windows.Forms.Label();
+            this.titleLMS = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.view_all_students_table)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // view_all_students_table
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.view_all_students_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.view_all_students_table.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.header_reg_num,
             this.header_student_name,
             this.header_student_semester,
             this.header_student_department,
             this.header_is_hostelite});
-            this.dataGridView1.Location = new System.Drawing.Point(136, 123);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(545, 150);
-            this.dataGridView1.TabIndex = 27;
+            this.view_all_students_table.Location = new System.Drawing.Point(136, 123);
+            this.view_all_students_table.Name = "view_all_students_table";
+            this.view_all_students_table.Size = new System.Drawing.Size(545, 150);
+            this.view_all_students_table.TabIndex = 27;
+            this.view_all_students_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // header_reg_num
+            // 
+            this.header_reg_num.HeaderText = "Registration No.";
+            this.header_reg_num.Name = "header_reg_num";
+            // 
+            // header_student_name
+            // 
+            this.header_student_name.HeaderText = "Name";
+            this.header_student_name.Name = "header_student_name";
+            // 
+            // header_student_semester
+            // 
+            this.header_student_semester.HeaderText = "Semester";
+            this.header_student_semester.Name = "header_student_semester";
+            // 
+            // header_student_department
+            // 
+            this.header_student_department.HeaderText = "Department";
+            this.header_student_department.Name = "header_student_department";
+            // 
+            // header_is_hostelite
+            // 
+            this.header_is_hostelite.HeaderText = "Hostelite";
+            this.header_is_hostelite.Name = "header_is_hostelite";
             // 
             // btn_all_students_back
             // 
@@ -84,44 +110,19 @@
             this.titleLMS.TabIndex = 24;
             this.titleLMS.Text = "Learning Management System";
             // 
-            // header_reg_num
-            // 
-            this.header_reg_num.HeaderText = "Registration No.";
-            this.header_reg_num.Name = "header_reg_num";
-            // 
-            // header_student_name
-            // 
-            this.header_student_name.HeaderText = "Name";
-            this.header_student_name.Name = "header_student_name";
-            // 
-            // header_student_semester
-            // 
-            this.header_student_semester.HeaderText = "Semester";
-            this.header_student_semester.Name = "header_student_semester";
-            // 
-            // header_student_department
-            // 
-            this.header_student_department.HeaderText = "Department";
-            this.header_student_department.Name = "header_student_department";
-            // 
-            // header_is_hostelite
-            // 
-            this.header_is_hostelite.HeaderText = "Hostelite";
-            this.header_is_hostelite.Name = "header_is_hostelite";
-            // 
             // view_all_students
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.view_all_students_table);
             this.Controls.Add(this.btn_all_students_back);
             this.Controls.Add(this.label_all_course);
             this.Controls.Add(this.titleLMS);
             this.Name = "view_all_students";
             this.Text = "view_all_students";
             this.Load += new System.EventHandler(this.view_all_students_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_all_students_table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,7 +130,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView view_all_students_table;
         private System.Windows.Forms.DataGridViewTextBoxColumn header_reg_num;
         private System.Windows.Forms.DataGridViewTextBoxColumn header_student_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn header_student_semester;

@@ -31,12 +31,12 @@
             this.label_all_course = new System.Windows.Forms.Label();
             this.titleLMS = new System.Windows.Forms.Label();
             this.btn_all_course_back = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.all_courses_table = new System.Windows.Forms.DataGridView();
             this.header_course_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.header_course_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.header_semester = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.header_credit_hours = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_courses_table)).BeginInit();
             this.SuspendLayout();
             // 
             // label_all_course
@@ -71,18 +71,19 @@
             this.btn_all_course_back.UseVisualStyleBackColor = true;
             this.btn_all_course_back.Click += new System.EventHandler(this.btn_all_course_back_Click);
             // 
-            // dataGridView1
+            // all_courses_table
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.all_courses_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.all_courses_table.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.header_course_code,
             this.header_course_name,
             this.header_semester,
             this.header_credit_hours});
-            this.dataGridView1.Location = new System.Drawing.Point(175, 122);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(443, 150);
-            this.dataGridView1.TabIndex = 23;
+            this.all_courses_table.Location = new System.Drawing.Point(175, 122);
+            this.all_courses_table.Name = "all_courses_table";
+            this.all_courses_table.Size = new System.Drawing.Size(443, 150);
+            this.all_courses_table.TabIndex = 23;
+            this.all_courses_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // header_course_code
             // 
@@ -109,14 +110,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.all_courses_table);
             this.Controls.Add(this.btn_all_course_back);
             this.Controls.Add(this.label_all_course);
             this.Controls.Add(this.titleLMS);
             this.Name = "view_all_courses";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_courses_table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,7 +128,7 @@
         private System.Windows.Forms.Label label_all_course;
         private System.Windows.Forms.Label titleLMS;
         private System.Windows.Forms.Button btn_all_course_back;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView all_courses_table;
         private System.Windows.Forms.DataGridViewTextBoxColumn header_course_code;
         private System.Windows.Forms.DataGridViewTextBoxColumn header_course_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn header_semester;

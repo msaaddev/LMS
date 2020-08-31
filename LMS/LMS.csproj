@@ -70,12 +70,6 @@
     <Compile Include="admin_panel.Designer.cs">
       <DependentUpon>admin_panel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_sign_up.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin_sign_up.Designer.cs">
-      <DependentUpon>Admin_sign_up.cs</DependentUpon>
-    </Compile>
     <Compile Include="delete_course.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +82,11 @@
     <Compile Include="delete_student.Designer.cs">
       <DependentUpon>delete_student.cs</DependentUpon>
     </Compile>
+    <Compile Include="LMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMSDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="main_window.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +98,12 @@
     </Compile>
     <Compile Include="register_course.Designer.cs">
       <DependentUpon>register_course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sign_up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sign_up.Designer.cs">
+      <DependentUpon>sign_up.cs</DependentUpon>
     </Compile>
     <Compile Include="student_login.cs">
       <SubType>Form</SubType>
@@ -162,9 +167,6 @@
     <EmbeddedResource Include="admin_panel.resx">
       <DependentUpon>admin_panel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_sign_up.resx">
-      <DependentUpon>Admin_sign_up.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="delete_course.resx">
       <DependentUpon>delete_course.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="register_course.resx">
       <DependentUpon>register_course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sign_up.resx">
+      <DependentUpon>sign_up.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="student_login.resx">
       <DependentUpon>student_login.cs</DependentUpon>
@@ -210,6 +215,17 @@
     <EmbeddedResource Include="view_registered_courses.resx">
       <DependentUpon>view_registered_courses.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="LMSDataSet.xsc">
+      <DependentUpon>LMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMSDataSet.xss">
+      <DependentUpon>LMSDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

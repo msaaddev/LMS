@@ -42,6 +42,7 @@
             this.delete_course_txt_course_code.Name = "delete_course_txt_course_code";
             this.delete_course_txt_course_code.Size = new System.Drawing.Size(341, 20);
             this.delete_course_txt_course_code.TabIndex = 41;
+            this.delete_course_txt_course_code.TextChanged += new System.EventHandler(this.delete_course_txt_course_code_TextChanged);
             // 
             // delete_course_course_code
             // 

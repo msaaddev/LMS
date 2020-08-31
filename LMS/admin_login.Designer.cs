@@ -36,11 +36,12 @@
             this.txt_login_admin_username = new System.Windows.Forms.TextBox();
             this.login_admin_password = new System.Windows.Forms.Label();
             this.login_admin_username = new System.Windows.Forms.Label();
+            this.admin_sign_up = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_admin_login_back
             // 
-            this.btn_admin_login_back.Location = new System.Drawing.Point(429, 384);
+            this.btn_admin_login_back.Location = new System.Drawing.Point(501, 384);
             this.btn_admin_login_back.Name = "btn_admin_login_back";
             this.btn_admin_login_back.Size = new System.Drawing.Size(140, 37);
             this.btn_admin_login_back.TabIndex = 35;
@@ -50,7 +51,7 @@
             // 
             // btn_admin_login
             // 
-            this.btn_admin_login.Location = new System.Drawing.Point(213, 384);
+            this.btn_admin_login.Location = new System.Drawing.Point(164, 384);
             this.btn_admin_login.Name = "btn_admin_login";
             this.btn_admin_login.Size = new System.Drawing.Size(140, 37);
             this.btn_admin_login.TabIndex = 34;
@@ -112,11 +113,22 @@
             this.login_admin_username.TabIndex = 36;
             this.login_admin_username.Text = "Username";
             // 
+            // admin_sign_up
+            // 
+            this.admin_sign_up.Location = new System.Drawing.Point(326, 384);
+            this.admin_sign_up.Name = "admin_sign_up";
+            this.admin_sign_up.Size = new System.Drawing.Size(140, 37);
+            this.admin_sign_up.TabIndex = 40;
+            this.admin_sign_up.Text = "Sign Up";
+            this.admin_sign_up.UseVisualStyleBackColor = true;
+            this.admin_sign_up.Click += new System.EventHandler(this.admin_sign_up_Click);
+            // 
             // admin_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.admin_sign_up);
             this.Controls.Add(this.txt_login_admin_password);
             this.Controls.Add(this.txt_login_admin_username);
             this.Controls.Add(this.login_admin_password);
@@ -142,5 +154,6 @@
         private System.Windows.Forms.TextBox txt_login_admin_username;
         private System.Windows.Forms.Label login_admin_password;
         private System.Windows.Forms.Label login_admin_username;
+        private System.Windows.Forms.Button admin_sign_up;
     }
 }

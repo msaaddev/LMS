@@ -82,6 +82,7 @@
             this.update_course_txt_course_code.Name = "update_course_txt_course_code";
             this.update_course_txt_course_code.Size = new System.Drawing.Size(341, 20);
             this.update_course_txt_course_code.TabIndex = 35;
+            this.update_course_txt_course_code.TextChanged += new System.EventHandler(this.update_course_txt_course_code_TextChanged);
             // 
             // update_course_course_code
             // 
@@ -119,6 +120,7 @@
             this.update_course_txt_course_name.Name = "update_course_txt_course_name";
             this.update_course_txt_course_name.Size = new System.Drawing.Size(341, 20);
             this.update_course_txt_course_name.TabIndex = 31;
+            this.update_course_txt_course_name.TextChanged += new System.EventHandler(this.update_course_txt_course_name_TextChanged);
             // 
             // update_course_course_name
             // 

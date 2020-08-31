@@ -34,13 +34,9 @@
             this.update_student_is_hostelite = new System.Windows.Forms.Label();
             this.txt_update_student_department = new System.Windows.Forms.TextBox();
             this.update_student_department = new System.Windows.Forms.Label();
-            this.txt_update_student_password = new System.Windows.Forms.TextBox();
-            this.txt_update_student_username = new System.Windows.Forms.TextBox();
             this.txt_update_student_semester = new System.Windows.Forms.TextBox();
             this.txt_update_student_name = new System.Windows.Forms.TextBox();
             this.txt_update_student_reg_num = new System.Windows.Forms.TextBox();
-            this.update_student_password = new System.Windows.Forms.Label();
-            this.update_student_username = new System.Windows.Forms.Label();
             this.update_student_semester = new System.Windows.Forms.Label();
             this.update_student_name = new System.Windows.Forms.Label();
             this.update_sudent_reg_no = new System.Windows.Forms.Label();
@@ -103,20 +99,6 @@
             this.update_student_department.TabIndex = 46;
             this.update_student_department.Text = "Department";
             // 
-            // txt_update_student_password
-            // 
-            this.txt_update_student_password.Location = new System.Drawing.Point(300, 312);
-            this.txt_update_student_password.Name = "txt_update_student_password";
-            this.txt_update_student_password.Size = new System.Drawing.Size(341, 20);
-            this.txt_update_student_password.TabIndex = 45;
-            // 
-            // txt_update_student_username
-            // 
-            this.txt_update_student_username.Location = new System.Drawing.Point(300, 282);
-            this.txt_update_student_username.Name = "txt_update_student_username";
-            this.txt_update_student_username.Size = new System.Drawing.Size(341, 20);
-            this.txt_update_student_username.TabIndex = 44;
-            // 
             // txt_update_student_semester
             // 
             this.txt_update_student_semester.Location = new System.Drawing.Point(300, 251);
@@ -137,26 +119,6 @@
             this.txt_update_student_reg_num.Name = "txt_update_student_reg_num";
             this.txt_update_student_reg_num.Size = new System.Drawing.Size(341, 20);
             this.txt_update_student_reg_num.TabIndex = 41;
-            // 
-            // update_student_password
-            // 
-            this.update_student_password.AutoSize = true;
-            this.update_student_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.update_student_password.Location = new System.Drawing.Point(160, 312);
-            this.update_student_password.Name = "update_student_password";
-            this.update_student_password.Size = new System.Drawing.Size(86, 20);
-            this.update_student_password.TabIndex = 40;
-            this.update_student_password.Text = "Password";
-            // 
-            // update_student_username
-            // 
-            this.update_student_username.AutoSize = true;
-            this.update_student_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.update_student_username.Location = new System.Drawing.Point(160, 280);
-            this.update_student_username.Name = "update_student_username";
-            this.update_student_username.Size = new System.Drawing.Size(91, 20);
-            this.update_student_username.TabIndex = 39;
-            this.update_student_username.Text = "Username";
             // 
             // update_student_semester
             // 
@@ -208,7 +170,7 @@
             this.btn_update_student.UseVisualStyleBackColor = true;
             this.btn_update_student.Click += new System.EventHandler(this.btn_update_student_Click);
             // 
-            // update_form
+            // update_student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -219,19 +181,15 @@
             this.Controls.Add(this.update_student_is_hostelite);
             this.Controls.Add(this.txt_update_student_department);
             this.Controls.Add(this.update_student_department);
-            this.Controls.Add(this.txt_update_student_password);
-            this.Controls.Add(this.txt_update_student_username);
             this.Controls.Add(this.txt_update_student_semester);
             this.Controls.Add(this.txt_update_student_name);
             this.Controls.Add(this.txt_update_student_reg_num);
-            this.Controls.Add(this.update_student_password);
-            this.Controls.Add(this.update_student_username);
             this.Controls.Add(this.update_student_semester);
             this.Controls.Add(this.update_student_name);
             this.Controls.Add(this.update_sudent_reg_no);
             this.Controls.Add(this.label_update_course);
             this.Controls.Add(this.titleLMS);
-            this.Name = "update_form";
+            this.Name = "update_student";
             this.Text = "update_form";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -246,13 +204,9 @@
         private System.Windows.Forms.Label update_student_is_hostelite;
         private System.Windows.Forms.TextBox txt_update_student_department;
         private System.Windows.Forms.Label update_student_department;
-        private System.Windows.Forms.TextBox txt_update_student_password;
-        private System.Windows.Forms.TextBox txt_update_student_username;
         private System.Windows.Forms.TextBox txt_update_student_semester;
         private System.Windows.Forms.TextBox txt_update_student_name;
         private System.Windows.Forms.TextBox txt_update_student_reg_num;
-        private System.Windows.Forms.Label update_student_password;
-        private System.Windows.Forms.Label update_student_username;
         private System.Windows.Forms.Label update_student_semester;
         private System.Windows.Forms.Label update_student_name;
         private System.Windows.Forms.Label update_sudent_reg_no;

@@ -19,7 +19,6 @@ D:\LMS\LMS\bin\Debug\LMS.pdb
 D:\LMS\LMS\obj\Debug\LMS.csprojAssemblyReference.cache
 D:\LMS\LMS\obj\Debug\LMS.add_course.resources
 D:\LMS\LMS\obj\Debug\LMS.admin_panel.resources
-D:\LMS\LMS\obj\Debug\LMS.signup_txt_admin_designation.resources
 D:\LMS\LMS\obj\Debug\LMS.delete_course.resources
 D:\LMS\LMS\obj\Debug\LMS.Properties.Resources.resources
 D:\LMS\LMS\obj\Debug\LMS.update_course.resources
@@ -39,3 +38,4 @@ D:\LMS\LMS\obj\Debug\LMS.student_panel.resources
 D:\LMS\LMS\obj\Debug\LMS.view_courses_student.resources
 D:\LMS\LMS\obj\Debug\LMS.register_course.resources
 D:\LMS\LMS\obj\Debug\LMS.view_registered_courses.resources
+D:\LMS\LMS\obj\Debug\LMS.sign_up.resources

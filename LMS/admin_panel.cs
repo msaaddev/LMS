@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace LMS
 {
     public partial class admin_panel : Form
     {
+        SqlConnection con = new SqlConnection("Data Source=ROZINA-PC;Initial Catalog=LMS;Integrated Security=True");
+
         public admin_panel()
         {
             InitializeComponent();
@@ -43,6 +47,7 @@ namespace LMS
 
         private void btn_admin_panel_view_all_courses_Click(object sender, EventArgs e)
         {
+
             this.Hide();
             new view_all_courses().Show();
         }
